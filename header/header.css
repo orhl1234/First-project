@@ -1,0 +1,99 @@
+body{
+    width: 100vw;
+    height: 100vh;
+}
+header{
+    border: solid 1px black;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    
+}
+.dropdown-link{
+    background-color: white;
+    color: black;
+    width: 110px;
+    height: 50px;
+    margin-left: 10px;
+    text-decoration: none;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.dropdown-link:hover{
+    background-color: #713BEA;
+    color: white;
+    
+} 
+.header-div{
+    display: flex;
+    align-items: center;
+}
+#logo{
+    padding-right: 10px;
+}
+input{
+    border-radius: 50px;
+    width: 140px;
+    height: 20px;
+    align-self: center;
+    padding: 10px;
+    margin-left: 10px;
+    border: 1px solid #9a9a9a;
+    font-size: 16px;
+
+}
+#dark-mode{
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    padding:20px;
+    margin-left: 10px;
+}
+
+.certified-button{
+    cursor: pointer;
+    margin-left: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.certified-button img{
+    width: 30px;
+}
+.attached-buttons{
+    position: absolute;
+    right: 10px;
+    align-self: center;
+}
+
+#sign-up{
+    cursor: pointer;
+    background-color: #713BEA;
+    color: white;
+    border: none;
+    width: 90px;
+    height: 40px;
+    border-radius: 50px;
+    font-size: 16px;
+}
+#log-in{
+    cursor: pointer;
+    font-size: 16px;
+    background-color: #D9EEE1;
+    color: black;
+    border: none;
+    width: 90px;
+    height: 40px;
+    border-radius: 50px;
+}
+#log-in:hover{
+    color: white;
+    background-color: #713BEA;
+}
+a img {
+    width: 60px;
+}
