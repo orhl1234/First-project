@@ -25,7 +25,7 @@ header{
 .dropdown-link:hover{
     background-color: #713BEA;
     color: white;
-    
+    border-radius: 20px;
 } 
 .header-div{
     display: flex;
@@ -36,7 +36,7 @@ header{
 }
 input{
     border-radius: 50px;
-    width: 140px;
+    width: 100px;
     height: 20px;
     align-self: center;
     padding: 10px;
@@ -96,4 +96,26 @@ input{
 }
 a img {
     width: 60px;
+}
+section{
+    width: 400px;
+    height: auto;
+    background-color: lightsteelblue;
+    align-self: center;
+    justify-self: center;
+    border-radius: 20px;
+    margin-top: 100px;
+    text-align: center;
+    padding: 10px;
+}
+button{
+    cursor: pointer;
+    background-color: #c2fdf7;
+    color: rgb(3, 3, 3);
+    border: none;
+    width: 90px;
+    height: 40px;
+    border-radius: 50px;
+    font-size: 16px;
+    border: 1.6px solid black;
 }
