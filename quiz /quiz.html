@@ -5,27 +5,29 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="todo-list.css">
+    <link rel="stylesheet" href="quiz.css">
     <link rel="stylesheet" href="../header/header.css">
 
     <link rel="shortcut icon"
         href="https://www.candyicons.com/style-image-examples/abstract-uYcg0JhhxK7bQ54KOtzsLX9U.png"
         type="image/x-icon">
-    <title>Todo list</title>
+    <title>Quiz</title>
 </head>
 <body>
+
     <header>
         <a href="../index.html"><img id="logo"
             src="https://www.candyicons.com/style-image-examples/abstract-uYcg0JhhxK7bQ54KOtzsLX9U.png"
             alt=""></a>
             <div class= "header-div">
-        <a href="todo list.html" class="dropdown-link">Todo list</a>
+        <a href="../todo list/todo list.html" class="dropdown-link">Todo list</a>
         <a href="../jokes/jokes.html" class="dropdown-link">Jokes</a>
         <a href="../weather/weather.html" class="dropdown-link">Weather app</a>
         <a href="../stopwatch/stopwatch.html" class="dropdown-link">Stopwatch</a>
         <a href="../Game of numbers/games of numbers.html" class="dropdown-link">Guess the number</a>
         <a href="../ counter button/counter button.html" class="dropdown-link">Counter button</a>
-        <a href="../quiz /quiz.html" class="dropdown-link">Quiz</a>
+        <a href="quiz.html" class="dropdown-link">Quiz</a>
+
 
     </div >
         <input type="text" placeholder="Search...">
@@ -41,19 +43,20 @@
         </div>
     </header>
 
-    <section >
-        <h1>Todo list</h1>
-        <div class="input-buttton-row">
-            <input id="input-task" type="text" placeholder="Enter a task">
-            <button id="add-button">Add</button>
+    <section>
+
+        <h1>Quiz App</h1>
+        <div id="main-question">question</div>
+        <div class="options">
+            <button class="option-button">A</button>
+            <button class="option-button">B</button>
+            <button class="option-button">C</button>
+            <button class="option-button">D</button>
         </div>
-        <div id="task-list-div">
-            <ul id="task-list">
-                
-            </ul>
-        </div>
+        <button id="next-question">Next question</button>
     </section>
-<script src="todo-list.js"></script>
+
+<script src="quiz.js"></script>
 <script src="../header/header.js"></script>
 </body>
 </html>

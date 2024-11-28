@@ -1,5 +1,4 @@
 let isDarkMode = localStorage.getItem('darkMode') ==='true'
-console.log(typeof(isDarkMode))
 
 if (isDarkMode)
 {
@@ -9,7 +8,6 @@ else{
     setLightMode()
 }
 
-console.log(isDarkMode)
 const button = document.getElementById('dark-mode')
 button.addEventListener('click', toggleDarkMode)
 

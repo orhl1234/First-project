@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./header/header.css">
-    <link rel="stylesheet" href="./todo list/todo-list.css">
+    <link rel="stylesheet" href="style.css">
 
     <link rel="shortcut icon"
         href="https://www.candyicons.com/style-image-examples/abstract-uYcg0JhhxK7bQ54KOtzsLX9U.png"
@@ -18,18 +18,19 @@
 
 
         <a href="#"><img id="logo"
-            src="https://www.candyicons.com/style-image-examples/abstract-uYcg0JhhxK7bQ54KOtzsLX9U.png"
-            alt=""></a>
-            <div class= "header-div">
-        <a href="./todo list/todo list.html" class="dropdown-link">Todo list</a>
-        <a href="./jokes/jokes.html" class="dropdown-link">Jokes</a>
-        <a href="./weather/weather.html" class="dropdown-link">Weather app</a>
-        <a href="./stopwatch/stopwatch.html" class="dropdown-link">Stopwatch</a>
-        <a href="./Game of numbers/games of numbers.html" class="dropdown-link">Game of numbers</a>
-        <a href="./ counter button/counter button.html" class="dropdown-link">Counter button</a>
+                src="https://www.candyicons.com/style-image-examples/abstract-uYcg0JhhxK7bQ54KOtzsLX9U.png" alt=""></a>
+        <div class="header-div">
+            <a href="./todo list/todo list.html" class="dropdown-link">Todo list</a>
+            <a href="./jokes/jokes.html" class="dropdown-link">Jokes</a>
+            <a href="./weather/weather.html" class="dropdown-link">Weather app</a>
+            <a href="./stopwatch/stopwatch.html" class="dropdown-link">Stopwatch</a>
+            <a href="./Game of numbers/games of numbers.html" class="dropdown-link">Game of numbers</a>
+            <a href="./ counter button/counter button.html" class="dropdown-link">Counter button</a>
+            <a href="./quiz /quiz.html" class="dropdown-link">Quiz</a>
 
-        
-    </div >
+
+
+        </div>
         <input type="text" placeholder="Search...">
         <img id="dark-mode" src="https://img.icons8.com/?size=100&id=20489&format=png&color=000000" alt="">
 
@@ -41,15 +42,31 @@
                 Log in
             </button>
         </div>
-   
+
 
 
     </header>
-<section>
-    <h1>Main page</h1>
-    <h2>Welcome</h2>
-</section>
-    <script src="header.js"></script>
+    <section>
+
+        <h1>Image Carousel</h1>
+        <div class="carousel">
+            <img src="
+    https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLQUQ6g6NjGqj3qncgsJGpxzzRrL_qDAc1qQ&s" class="active"
+                alt="Image 1">
+            <img src="https://letsenhance.io/static/73136da51c245e80edc6ccfe44888a99/1015f/MainBefore.jpg    "
+                alt="Image 2">
+            <img src="
+    https://fps.cdnpk.net/images/home/subhome-ai.webp?w=649&h=649">
+        </div>
+        <div class="controls">
+            <button id="prev">Previous</button>
+            <button id="next">Next</button>
+            <button id="toggle">Play</button>
+        </div>
+    </section>
+    <script src="./header/header.js"></script>
+    <script src="script.js"></script>
+
 </body>
 
 </html>
