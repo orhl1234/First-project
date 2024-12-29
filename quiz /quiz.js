@@ -10,6 +10,7 @@ let score = 0;
 
 const nextButton = document.getElementById('next-question')
 const mainQuestion = document.getElementById('main-question')
+const options = document.querySelectorAll(".option-button");
 
 
 
@@ -24,19 +25,26 @@ function NextQestion() {
         mainQuestion.innerHTML = quizData[currentQuestion].question
     }
     else {
-        alert('game finished')
+        alert('game finished. your score is ' + score)
     }
-}
-const options = document.querySelectorAll(".option-button");
 
-// for (let i = 0; i < options.length; i++) {
-//     options[i].addEventListener('click', optionFunction)
-// }
-for (option in options) {
-    option.addEventListener('click', optionFunction(option))
+    options.forEach(function (option, index) {
+        option.textContent = quizData[currentQuestion].options[index]
+    })
 }
 
-function optionFunction(option) {
-     if(quizData.indexOf(option) == quizData[currentQuestion].correct)
-        console.log("good");    
+
+options.forEach(function (option, index) {
+    option.textContent = quizData[currentQuestion].options[index]
+    option.addEventListener('click', () => optionFunction(index))
+})
+
+function optionFunction(index) {
+    if (index == quizData[currentQuestion].correct) {
+        score++
+        alert("correct")
+    }
+    else {
+        alert("wrong")
+    }
 }
